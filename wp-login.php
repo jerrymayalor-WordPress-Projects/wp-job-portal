@@ -120,7 +120,9 @@ function login_header( $title = 'Log In', $message = '', $wp_error = null ) {
 	 */
 	do_action( 'login_head' );
 
-	$login_header_url = __( 'https://wordpress.org/' );
+	$login_header_url = __( '' );
+
+	// https://wordpress.org/
 
 	/**
 	 * Filters link URL of the header logo above login form.
@@ -206,7 +208,7 @@ function login_header( $title = 'Log In', $message = '', $wp_error = null ) {
 
 	?>
 	<div id="login">
-		<h1><a href="<?php echo esc_url( $login_header_url ); ?>"><?php echo $login_header_text; ?></a></h1>
+		
 	<?php
 	/**
 	 * Filters the message to display above the login form.
